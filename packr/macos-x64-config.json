@@ -1,0 +1,17 @@
+{
+    "platform": "mac64",
+    "icon": "packr/app.icns",
+    "jdk": "osx-jdk",
+    "executable": "Lazepa",
+    "classpath": [
+        "target/Lazepa.jar"
+    ],
+    "mainclass": "net.runelite.launcher.Launcher",
+    "vmargs": [
+       "-Drunelite.launcher.nojvm=true",
+       "-Xmx512m",
+       "-Xss2m",
+       "-XX:CompileThreshold=1500"
+    ],
+    "output": "native-osx/Lazepa.app"
+}

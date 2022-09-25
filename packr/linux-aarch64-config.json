@@ -1,0 +1,20 @@
+{
+    "platform": "linuxaarch64",
+    "jdk": "linux-aarch64-jdk",
+    "executable": "Lazepa",
+    "classpath": [
+        "target/Lazepa.jar"
+    ],
+    "mainclass": "net.runelite.launcher.Launcher",
+    "vmargs": [
+       "-Drunelite.launcher.nojvm=true",
+       "-Xmx512m",
+       "-Xss2m",
+       "-XX:CompileThreshold=1500"
+    ],
+    "output": "native-linux-aarch64/Lazepa.AppDir/",
+    "resources": [
+      "target/filtered-resources/app.desktop",
+      "appimage/app.png"
+    ]
+}
